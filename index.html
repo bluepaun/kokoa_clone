@@ -4,12 +4,26 @@
         <meta charset="utf-8">
         <meta name="author" content="bluepaun"></meta>
         <meta name="description" content="Welcome to my Kakao clone">
-        <title>This is my title</title>
-        <link href="styles.css" rel="stylesheet">
+        <title>Box Model</title>
+        <style>
+            .boxs{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border : 2px solid black;
+                display: inline-block;
+            }
+            #testbox{
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <h1>Title</h1>
         <p>Lo something</p>
         <a href="contact-me.html">Fake link</a>
+        <span class="boxs">1</span>
+        <span class="boxs">1</span>
+        <span id="testbox" class="boxs">1</span>
     </body>
 </html>
