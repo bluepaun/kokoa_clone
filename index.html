@@ -4,24 +4,23 @@
         <meta charset="utf-8">
         <meta name="author" content="bluepaun"></meta>
         <meta name="description" content="Welcome to my Kakao clone">
-        <title>Box Model</title>
+        <title>Transition</title>
         <style>
-            .box{
-                background-color: red;
-                font-size: 40px;
-            }
-            .box:hover{
-                background-color: pink;
-            }
-            .box:active{
-                background-color: green;
-            }
-            .box:focus{
-                background-color: blue;
-            }
+           .box{
+               background-color: green;
+               color: white;
+               transition:all 0.5s ease-in-out;
+
+           }
+           .box:hover{
+               background-color: red;
+               color: blue;
+           }
         </style>
     </head>
     <body>
-        <textarea class="box">lalallalal</textarea>
+        <span class="box">
+            Text
+        </span>
     </body>
 </html>
