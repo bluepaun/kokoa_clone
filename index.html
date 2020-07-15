@@ -10,14 +10,23 @@
                 width: 500px;
                 height: 500px;
                 background-color: red;
-                transition: transform 5s ease-in-out
+                animation: 5s scaleAndRotateSquare infinite ease-in-out;
             }
-            .box:hover{
-                transform: rotate(100turn) scale(0.5);
+            @keyframes scaleAndRotateSquare{
+                0%{
+                    transform: none;
+                }
+                50%{
+                    transform: rotate(1turn) scale(.5, .5);
+                }
+                100%{
+                    transform: none;
+                    color: blue;
+                }
             }
         </style>
     </head>
     <body>
-        <div class="box"></div>
+        <div class="box">text is text</div>
     </body>
 </html>
